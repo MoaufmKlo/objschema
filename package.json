@@ -1,0 +1,38 @@
+{
+    "name": "objschema",
+    "version": "1.0.0",
+    "description": "Dead simple object schema validation for Node.js",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MoaufmKlo/objschema.git"
+    },
+    "keywords": [
+        "json",
+        "schema",
+        "validate",
+        "validator",
+        "object"
+    ],
+    "author": {
+        "email": "hey@moaufmklo.com",
+        "name": "MoaufmKlo",
+        "url": "https://moaufmklo.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MoaufmKlo/objschema/issues"
+    },
+    "homepage": "https://github.com/MoaufmKlo/objschema#readme",
+    "devDependencies": {
+        "jest": "^27.4.7"
+    },
+    "jest": {
+        "testMatch": [
+            "**/tests/**/*.[jt]s?(x)"
+        ]
+    }
+}
