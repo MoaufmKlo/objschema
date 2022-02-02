@@ -1,4 +1,4 @@
-const objschema = require("../");
+const urb = require("../");
 
 const schema = {
     "required": {
@@ -12,7 +12,7 @@ const schema = {
 
 // only required keys
 test("string: only required keys", () => {
-    const res = objschema.validate(schema, {
+    const res = urb.validate(schema, {
         "one": {"three": "string"},
         "two": {"four": "string"}
     });
@@ -22,7 +22,7 @@ test("string: only required keys", () => {
 
 // all keys
 test("string: all keys", () => {
-    const res = objschema.validate(schema, {
+    const res = urb.validate(schema, {
         "one": {"three": "string"},
         "two": {"four": "string"},
         "three": {"five": "string"}
@@ -33,7 +33,7 @@ test("string: all keys", () => {
 
 // missing keys
 test("string: missing keys", () => {
-    const res = objschema.validate(schema, {
+    const res = urb.validate(schema, {
         "one": {"three": "string"},
         "three": {"five": "string"}
     });
@@ -43,7 +43,7 @@ test("string: missing keys", () => {
 
 // invalid keys
 test("string: invalid keys", () => {
-    const res = objschema.validate(schema, {
+    const res = urb.validate(schema, {
         "one": false,
         "two": "string",
         "three": {"five": "string"}

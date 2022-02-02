@@ -1,7 +1,7 @@
 <div align="center">
-    <h1>objschema</h1>
-    <img alt="npm Version" src="https://img.shields.io/npm/v/objschema?style=for-the-badge">
-    <img alt="npm Downloads" src="https://img.shields.io/npm/dw/objschema?style=for-the-badge">
+    <h1>urb</h1>
+    <img alt="npm Version" src="https://img.shields.io/npm/v/urb?style=for-the-badge">
+    <img alt="npm Downloads" src="https://img.shields.io/npm/dw/urb?style=for-the-badge">
     <br>
 </div>
 
@@ -19,16 +19,16 @@ Dead simple object schema validation for [Node.js](https://nodejs.org/).
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/) to install objschema:
+Use the package manager [npm](https://www.npmjs.com/) to install urb:
 
 ```bash
-npm install objschema
+npm install urb
 ```
 
 ## Usage
 
 ```javascript
-const objschema = require("objschema");
+const urb = require("urb");
 
 const schema = {
     "required": {
@@ -43,7 +43,7 @@ const schema = {
     }
 }
 
-const res = objschema.validate(schema, {
+const res = urb.validate(schema, {
     "one": "hello",
     "two": "world",
     "three": {
@@ -80,13 +80,13 @@ The `res` object returned consists of the following:
 - string
 - uuid
 
-Is something missing or misbehaving? [Open an issue.](https://github.com/MoaufmKlo/objschema/issues/new)
+Is something missing or misbehaving? [Open an issue.](https://github.com/MoaufmKlo/urb/issues/new)
 
 ## Links
 
-- [npm](https://www.npmjs.com/package/objschema)
-- [GitHub](https://github.com/MoaufmKlo/objschema)
+- [npm](https://www.npmjs.com/package/urb)
+- [GitHub](https://github.com/MoaufmKlo/urb)
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please [open an issue]((https://github.com/MoaufmKlo/objschema/issues/new)) first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please [open an issue]((https://github.com/MoaufmKlo/urb/issues/new)) first to discuss what you would like to change.

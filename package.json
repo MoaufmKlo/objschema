@@ -1,5 +1,5 @@
 {
-    "name": "objschema",
+    "name": "urb",
     "version": "1.0.0",
     "description": "Dead simple object schema validation for Node.js",
     "main": "index.js",
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/MoaufmKlo/objschema.git"
+        "url": "git+https://github.com/MoaufmKlo/urb.git"
     },
     "keywords": [
         "json",
@@ -24,9 +24,9 @@
     },
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/MoaufmKlo/objschema/issues"
+        "url": "https://github.com/MoaufmKlo/urb/issues"
     },
-    "homepage": "https://github.com/MoaufmKlo/objschema#readme",
+    "homepage": "https://github.com/MoaufmKlo/urb#readme",
     "devDependencies": {
         "jest": "^27.4.7"
     },
