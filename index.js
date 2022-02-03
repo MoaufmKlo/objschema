@@ -21,6 +21,8 @@ module.exports.validate = (schema, object) => {
     if (!schema.required) schema.required = {};
     if (!schema.optional) schema.optional = {};
 
+    object = JSON.parse(JSON.stringify(object)); // clone object
+
     // validation
     let errors = [];
 
@@ -42,8 +44,8 @@ module.exports.validate = (schema, object) => {
                 if (type.validate(object[key])) delete object[key]
                 else errors.push(type.error(key)), delete object[key];
             } else errors.push(type.error(key));
-            }
-        });
+        }
+    });
 
     // validate optional keys
     Object.keys(schema.optional).forEach((key) => {
